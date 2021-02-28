@@ -1,0 +1,60 @@
+{
+	"name": "homes",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "homes.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Sell",
+				"type": "String"
+			},
+			{
+				"name": " \"List\"",
+				"type": "String"
+			},
+			{
+				"name": " \"Living\"",
+				"type": "String"
+			},
+			{
+				"name": " \"Rooms\"",
+				"type": "String"
+			},
+			{
+				"name": " \"Beds\"",
+				"type": "String"
+			},
+			{
+				"name": " \"Baths\"",
+				"type": "String"
+			},
+			{
+				"name": " \"Age\"",
+				"type": "String"
+			},
+			{
+				"name": " \"Acres\"",
+				"type": "String"
+			},
+			{
+				"name": " \"Taxes\"",
+				"type": "String"
+			}
+		]
+	}
+}
