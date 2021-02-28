@@ -1,5 +1,5 @@
 {
-	"name": "homes",
+	"name": "inputfile",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
