@@ -158,6 +158,22 @@
 						"type": "DelimitedTextReadSettings"
 					}
 				}
+			},
+			{
+				"name": "Wait 20 seconds",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "loopallfiles",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 20
+				}
 			}
 		],
 		"annotations": []
