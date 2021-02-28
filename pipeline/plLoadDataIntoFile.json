@@ -83,7 +83,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"tblname": {
-											"value": "@item().name",
+											"value": "@replace(replace(item().name,'.csv',''),'-','')",
 											"type": "Expression"
 										}
 									}
@@ -118,6 +118,7 @@
 								],
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
+									"recursive": true,
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
@@ -150,6 +151,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
