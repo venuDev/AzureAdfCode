@@ -2,7 +2,7 @@
 	"name": "folder",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
+			"referenceName": "absinputfiles",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
